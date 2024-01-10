@@ -1,0 +1,14 @@
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <div class="group-form">
+        {{ form.username.label }}
+        {{ form.username() }}
+    </div>
+    
+    <div class="group-form">
+        {{ form.password.label }}
+        {{ form.password() }}
+    </div>
+    
+    {{ form.submit() }}
+</form>
